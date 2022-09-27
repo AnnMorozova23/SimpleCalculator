@@ -1,3 +1,6 @@
+package com.it_academy.calculator;
+
+
 public class CalculatorRunner {
 
     public static void main(String[] args) {
@@ -8,7 +11,11 @@ public class CalculatorRunner {
         double num1 = CalculatorInputService.getNumbers();
         double num2 = CalculatorInputService.getNumbers();
         char operation = CalculatorInputService.getOperation();
-        System.out.println("The result is: " + getResult(num1, num2, operation));
+        printResult(num1,num2,operation);
+    }
+
+    public static void printResult(double num1, double num2, char operation){
+        System.out.println("The result is: "+ getResult(num1, num2, operation));
     }
 
 
