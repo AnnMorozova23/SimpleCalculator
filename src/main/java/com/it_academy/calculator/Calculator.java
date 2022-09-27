@@ -1,3 +1,5 @@
+package com.it_academy.calculator;
+
 public class Calculator {
 
     public static double sum(double num1, double num2) {
